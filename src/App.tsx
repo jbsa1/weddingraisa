@@ -4,9 +4,13 @@ import Hero from "./components/Hero";
 import CoupleSection from "./components/CoupleSection";
 import Countdown from "./components/Countdown";
 import EventSection from "./components/EventSection";
+import InvitationSection from "./components/InvitationSection";
+import YouTubeSection from "./components/YouTubeSection";
 import Gallery from "./components/Gallery";
-import RSVPForm from "./components/RSVPForm";
+import LiveStreamingSection from "./components/LiveStreamingSection";
+import OurStory from "./components/OurStory";
 import WeddingGift from "./components/WeddingGift";
+import RSVPForm from "./components/RSVPForm";
 import BestWishes from "./components/BestWishes";
 import Footer from "./components/Footer";
 import { weddingData } from "./data/weddingData";
@@ -173,27 +177,40 @@ const App: React.FC = () => {
                   reception={weddingData.reception}
                 />
 
-                {/* Countdown */}
-                <div className="countdown-decoration">
-                  <section className="countdown-section">
-                    <Countdown targetDate={weddingData.weddingDate} />
-                  </section>
-                </div>
+                 {/* Countdown */}
+                 <div className="countdown-decoration">
+                   <section className="countdown-section">
+                     <Countdown targetDate={weddingData.weddingDate} />
+                   </section>
+                 </div>
 
-                {/* Photo Gallery */}
-                <Gallery photos={weddingData.photos} />
 
-                {/* Wedding Gift */}
-                <WeddingGift gifts={weddingData.gifts} />
+                 {/* YouTube Video Section */}
+                 <YouTubeSection />
 
-                {/* Best Wishes */}
-                <BestWishes />
+                 {/* Photo Gallery */}
+                 <Gallery photos={weddingData.photos} />
+
+                  {/* Invitation Section */}
+                  <InvitationSection />
+
+                  {/* Live Streaming Section */}
+                  <LiveStreamingSection />
+
+                  {/* Wedding Gift */}
+                  <WeddingGift gifts={weddingData.gifts} />
+
+                 {/* Our Story */}
+                 <OurStory />
+
+                 {/* Best Wishes */}
+                 <BestWishes />
 
                 {/* RSVP Form */}
                 <RSVPForm guest={getGuestName()} />
 
-                {/* Footer */}
-                <Footer audioSrc="https://tibra-invitation.id/wp-content/uploads/2024/10/Keys-To-The-Castle.mp3" />
+                 {/* Footer */}
+                 <Footer audioSrc="/src/assets/music/midnight.mp3" />
               </motion.div>
             )}
           </AnimatePresence>

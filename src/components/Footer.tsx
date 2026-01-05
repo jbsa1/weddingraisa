@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 interface AudioPlayerProps {
@@ -6,13 +6,48 @@ interface AudioPlayerProps {
 }
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const playAudio = async () => {
+      if (audioRef.current) {
+        try {
+          await audioRef.current.play();
+          setIsPlaying(true);
+        } catch (error) {
+          console.log('Auto play failed, user interaction required');
+        }
+      }
+    };
+
+    playAudio();
+  }, []);
+
+  const togglePlay = async () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        try {
+          await audioRef.current.play();
+          setIsPlaying(true);
+        } catch (error) {
+          console.log('Play failed');
+        }
+      }
+    }
+  };
+
   return (
     <div className="audio-player">
-      <audio loop>
+      <audio ref={audioRef} loop preload="metadata">
         <source src={audioSrc} type="audio/mp3" />
+        Your browser does not support the audio element.
       </audio>
-      <button className="audio-control">
-        <i className="fas fa-music"></i>
+      <button className="audio-control" onClick={togglePlay}>
+        <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
       </button>
     </div>
   );
@@ -35,19 +70,19 @@ const Footer: React.FC<FooterProps> = ({ audioSrc }) => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p>Designed By wedding-invitation.id</p>
+          <p>Designed By JaffarSoft</p>
           <div className="social-links">
-            <a href="https://www.instagram.com/tibradigital/" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://www.tibradigital.id" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-globe"></i>
             </a>
-            <a href="https://pesan.link/chatminti" target="_blank" rel="noopener noreferrer">
+            <a href="h#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i>
             </a>
           </div>
-          <p>© 2024 Wedding Invitation. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Wedding Invitation. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

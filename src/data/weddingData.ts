@@ -15,7 +15,7 @@ export const weddingData: WeddingData = {
       "The Son of Mr. drg. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar, MPH,.CGRCP. & Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi",
     photo: "/Rafi1.jpeg",
   },
-  holyMatrimony: {
+   holyMatrimony: {
     title: "Akad",
     date: "Saturday, March 28th 2026",
     time: "09:00 WIB",
@@ -24,7 +24,7 @@ export const weddingData: WeddingData = {
       "Kobangdikal, Jl. Moro Krembangan, Morokrembangan, Kec. Krembangan, Surabaya, Jawa Timur 60178",
     mapsLink: "https://maps.app.goo.gl/Xai4TzMoWs8GECf16",
   },
-  reception: {
+   reception: {
     title: "Resepsi",
     date: "Saturday, March 28th 2026",
     time: "19.00 WIB",
@@ -32,7 +32,6 @@ export const weddingData: WeddingData = {
     address:
       "Kobangdikal, Jl. Moro Krembangan, Morokrembangan, Kec. Krembangan, Surabaya, Jawa Timur 60178",
     mapsLink: "https://maps.app.goo.gl/Xai4TzMoWs8GECf16",
-    liveStreaming: "https://maps.app.goo.gl/Xai4TzMoWs8GECf16",
   },
   weddingDate: new Date("2026-03-28T08:00:00"),
   story: {
@@ -54,7 +53,7 @@ export const weddingData: WeddingData = {
     "/IMG_4117.JPG",
     "/IMG_4136.JPEG",
   ],
-  gifts: {
+   gifts: {
     bankAccounts: [
       {
         bank: "BCA",
@@ -67,17 +66,17 @@ export const weddingData: WeddingData = {
         accountName: "Mirza Ahmad Rafi Alwi",
       },
     ],
-    // digitalWallets: [
-    //   {
-    //     wallet: "ShopeePay",
-    //     accountNumber: "08123456789",
-    //     accountName: "Raisa Mahani",
-    //   },
-    // ],
-    // address: {
-    //   recipientName: "Raisa Mahani",
-    //   address:
-    //     "Address : Jl. Tanjung Sadari No.115, RW.04, Perak Bar., Kec. Krembangan, Surabaya, Jawa Timur 60177",
-    // },
+    digitalWallets: [
+       {
+        wallet: "ShopeePay",
+        accountNumber: "08123456789",
+        accountName: "Raisa Mahani",
+      },
+    ],
+    address: {
+      recipientName: "Raisa Mahani",
+      address:
+        "Address : Jl. Tanjung Sadari No.115, RW.04, Perak Bar., Kec. Krembangan, Surabaya, Jawa Timur 60177",
+    },
   },
 };

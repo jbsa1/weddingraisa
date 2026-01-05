@@ -574,7 +574,6 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 3rem;
 }
 
 .countdown-section {
@@ -647,6 +646,213 @@ a:active {
   letter-spacing: 0.1em;
 }
 
+/* Live Streaming Section */
+.live-streaming-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8f4f0 0%, #ede6d5 100%);
+  text-align: center;
+}
+
+.streaming-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.streaming-title {
+  font-family: 'Manstein', serif;
+  font-size: 3rem;
+  color: #8b7355;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.streaming-subtitle {
+  font-family: "Crimson Pro";
+  font-size: 1.1rem;
+  color: #6b5d54;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.streaming-content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(139, 115, 85, 0.1);
+}
+
+.streaming-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.streaming-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f4f0 100%);
+  border: 1px solid #e8dcc6;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.streaming-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(139, 115, 85, 0.15);
+}
+
+.streaming-card h3 {
+  font-family: "Crimson Pro";
+  font-size: 1.5rem;
+  color: #8b7355;
+  margin-bottom: 10px;
+}
+
+.streaming-description {
+  font-family: "Crimson Pro";
+  color: #6b5d54;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.streaming-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-family: "Crimson Pro";
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+}
+
+.streaming-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .live-streaming-section {
+    padding: 60px 20px;
+  }
+
+  .streaming-title {
+    font-size: 2.5rem;
+  }
+
+  .streaming-content {
+    padding: 30px 20px;
+  }
+
+  .streaming-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Invitation Section */
+.invitation-section {
+  padding: 6rem 2rem;
+  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-1.webp') center/cover;
+  position: relative;
+}
+
+.invitation-content {
+  background: rgba(249, 246, 239, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.invitation-title {
+  font-family: 'Manstein', serif;
+  font-size: 2.5rem;
+  color: #AC8711;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+
+.invitation-details {
+  text-align: left;
+}
+
+.family-section {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.family-section p {
+  margin: 0.5rem 0;
+}
+
+.also-inviting {
+  font-family: 'Manstein', serif;
+  font-size: 1.8rem;
+  color: #AC8711;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.also-inviting-list {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: left;
+}
+
+.also-inviting-list p {
+  margin: 0.5rem 0;
+}
+
+/* YouTube Section */
+.youtube-section {
+  padding: 6rem 2rem;
+  background-color: #EDE6D5;
+}
+
+.youtube-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.youtube-title {
+  font-family: 'Manstein', serif;
+  font-size: 2.5rem;
+  color: #AC8711;
+  margin-bottom: 3rem;
+}
+
+.youtube-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+}
+
 /* Gallery Section */
 .gallery-section {
   padding: 6rem 2rem;
@@ -668,7 +874,7 @@ a:active {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -795,6 +1001,118 @@ a:active {
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   backdrop-filter: blur(10px);
+}
+
+/* Our Story Section */
+.our-story-section {
+  padding: 6rem 2rem;
+  background-color: #F9F6EF;
+}
+
+.our-story-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-story-title {
+  font-family: 'Manstein', serif;
+  font-size: 2.5rem;
+  color: #AC8711;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.story-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(172, 135, 17, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story-image-container {
+  flex: 0 0 350px;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.story-section {
+  margin-bottom: 2rem;
+}
+
+.story-section:last-child {
+  margin-bottom: 0;
+}
+
+.story-title {
+  font-family: 'Gilda Display', serif;
+  font-size: 1.5rem;
+  color: #AC8711;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.story-text {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .our-story-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .our-story-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .story-card {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .story-image-container {
+    width: 100%;
+    height: 280px;
+  }
+
+  .story-content-wrapper {
+    gap: 1.5rem;
+  }
+
+  .story-title {
+    font-size: 1.3rem;
+  }
+
+  .story-text {
+    font-size: 0.95rem;
+  }
 }
 
 /* RSVP Section */
@@ -1448,7 +1766,7 @@ body {
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
 

@@ -12,7 +12,7 @@ interface RSVPProps {
   guest: string;
 }
 
-const RSVPForm: React.FC<RSVPProps> = ({guest}) => {
+const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
   const [formData, setFormData] = useState<RSVPFormData>({
     name: '',
     address: '',
@@ -88,7 +88,7 @@ const RSVPForm: React.FC<RSVPProps> = ({guest}) => {
             Please help us prepare everything better by confirming your attendance at our wedding event with the following RSVP form:
           </p>
           
-          <div className="guest-links" style={{ marginTop: '20px', textAlign: 'center' }}>
+          {/* <div className="guest-links" style={{ marginTop: '20px', textAlign: 'center' }}>
             <p style={{ fontSize: '14px', color: '#666', marginBottom: '10px' }}>
               Quick access for special guests:
             </p>
@@ -123,7 +123,7 @@ const RSVPForm: React.FC<RSVPProps> = ({guest}) => {
             >
                RSVP for {guest}
             </a>
-          </div>
+          </div> */}
         </motion.div>
 
         <motion.form 
