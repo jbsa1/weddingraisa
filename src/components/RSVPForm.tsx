@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 interface RSVPFormData {
   name: string;
   address: string;
-  attendance: 'Yes' | 'No' | '';
+  attendance: "Yes" | "No" | "";
   guests: number;
 }
 
@@ -12,34 +12,36 @@ interface RSVPProps {
   guest: string;
 }
 
-const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
+const RSVPForm: React.FC<RSVPProps> = ({ guest: _guest }) => {
   const [formData, setFormData] = useState<RSVPFormData>({
-    name: '',
-    address: '',
-    attendance: '',
-    guests: 1
+    name: "",
+    address: "",
+    attendance: "",
+    guests: 1,
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/rsvp`, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -47,11 +49,11 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
       if (response.ok) {
         setIsSubmitted(true);
       } else {
-        console.error('Failed to submit RSVP');
+        console.error("Failed to submit RSVP");
         // You could add error handling here
       }
     } catch (error) {
-      console.error('Error submitting RSVP:', error);
+      console.error("Error submitting RSVP:", error);
       // You could add error handling here
     } finally {
       setIsSubmitting(false);
@@ -60,7 +62,7 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
 
   if (isSubmitted) {
     return (
-      <motion.div 
+      <motion.div
         className="rsvp-success"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -68,7 +70,9 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
       >
         <i className="fas fa-check-circle"></i>
         <h3>Thank You!</h3>
-        <p>Your RSVP has been received. We look forward to celebrating with you!</p>
+        <p>
+          Your RSVP has been received. We look forward to celebrating with you!
+        </p>
       </motion.div>
     );
   }
@@ -76,7 +80,7 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
   return (
     <section className="rsvp-section">
       <div className="rsvp-content">
-        <motion.div 
+        <motion.div
           className="rsvp-header"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -85,9 +89,10 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
         >
           <h2 className="section-title">RSVP FORM</h2>
           <p className="rsvp-description">
-            Please help us prepare everything better by confirming your attendance at our wedding event with the following RSVP form:
+            Please help us prepare everything better by confirming your
+            attendance at our wedding event with the following RSVP form:
           </p>
-          
+
           {/* <div className="guest-links" style={{ marginTop: '20px', textAlign: 'center' }}>
             <p style={{ fontSize: '14px', color: '#666', marginBottom: '10px' }}>
               Quick access for special guests:
@@ -126,7 +131,7 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
           </div> */}
         </motion.div>
 
-        <motion.form 
+        <motion.form
           className="rsvp-form"
           onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 30 }}
@@ -135,7 +140,9 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
           viewport={{ once: true }}
         >
           <div className="form-group">
-            <label htmlFor="name" className="form-label">Name *</label>
+            <label htmlFor="name" className="form-label">
+              Name *
+            </label>
             <input
               type="text"
               id="name"
@@ -148,7 +155,9 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="address" className="form-label">Address</label>
+            <label htmlFor="address" className="form-label">
+              Address
+            </label>
             <input
               type="text"
               id="address"
@@ -160,7 +169,9 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="attendance" className="form-label">Will you attend? *</label>
+            <label htmlFor="attendance" className="form-label">
+              Will you attend? *
+            </label>
             <select
               id="attendance"
               name="attendance"
@@ -176,7 +187,9 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="guests" className="form-label">Amount of Guest</label>
+            <label htmlFor="guests" className="form-label">
+              Amount of Guest
+            </label>
             <select
               id="guests"
               name="guests"
@@ -184,21 +197,27 @@ const RSVPForm: React.FC<RSVPProps> = ({guest: _guest}) => {
               onChange={handleChange}
               className="form-select"
             >
-              {[1, 2, 3, 4, 5].map(num => (
-                <option key={num} value={num}>{num}</option>
+              {[1, 2, 3, 4, 5].map((num) => (
+                <option key={num} value={num}>
+                  {num}
+                </option>
               ))}
             </select>
           </div>
 
-          <button type="submit" className="submit-button" disabled={isSubmitting}>
-            {isSubmitting ? 'Submitting...' : 'Submit'}
+          <button
+            type="submit"
+            className="submit-button"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Submitting..." : "Submit"}
           </button>
         </motion.form>
 
         <div className="rsvp-decoration">
-          <img 
-            src="https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-15-Rev-1.webp" 
-            alt="Decoration" 
+          <img
+            src="https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-15-Rev-1.webp"
+            alt="Decoration"
           />
         </div>
       </div>

@@ -13,7 +13,7 @@ const YouTubeSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/N4psx-ryqfQ?si=9wC_sFtsJ58ved6e"
             title="Wedding Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
