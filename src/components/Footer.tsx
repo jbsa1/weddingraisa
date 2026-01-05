@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
 interface AudioPlayerProps {
@@ -6,48 +6,60 @@ interface AudioPlayerProps {
 }
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = useState(true); // Default true karena autoplay
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
-  useEffect(() => {
-    const playAudio = async () => {
-      if (audioRef.current) {
-        try {
-          await audioRef.current.play();
-          setIsPlaying(true);
-        } catch (error) {
-          console.log("Auto play failed, user interaction required");
-        }
-      }
-    };
+  // Extract YouTube video ID from URL
+  const getYouTubeVideoId = (url: string): string | null => {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length == 11) ? match[2] : null;
+  };
 
-    playAudio();
-  }, []);
+  const videoId = getYouTubeVideoId(audioSrc);
 
-  const togglePlay = async () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        try {
-          await audioRef.current.play();
-          setIsPlaying(true);
-        } catch (error) {
-          console.log("Play failed");
-        }
-      }
+  const togglePlay = () => {
+    if (iframeRef.current && iframeRef.current.contentWindow) {
+      const command = isPlaying ? 'pauseVideo' : 'playVideo';
+      iframeRef.current.contentWindow.postMessage(
+        JSON.stringify({
+          event: 'command',
+          func: command,
+          args: []
+        }),
+        '*'
+      );
+      setIsPlaying(!isPlaying);
     }
   };
 
+  if (!videoId) {
+    // Fallback to regular audio if not YouTube URL
+    return (
+      <div className="audio-player">
+        <audio autoPlay loop preload="metadata">
+          <source src={audioSrc} type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    );
+  }
+
   return (
     <div className="audio-player">
-      <audio ref={audioRef} loop preload="metadata">
-        <source src={audioSrc} type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio>
+      <iframe
+        ref={iframeRef}
+        width="0"
+        height="0"
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&loop=1&playlist=${videoId}&controls=0&showinfo=0&modestbranding=1&rel=0&enablejsapi=1`}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{ display: 'none' }}
+        title="Background Music"
+      ></iframe>
       <button className="audio-control" onClick={togglePlay}>
-        <i className={`fas ${isPlaying ? "fa-pause" : "fa-play"}`}></i>
+        <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
       </button>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Preloader from "./components/Preloader";
 import Hero from "./components/Hero";
 import CoupleSection from "./components/CoupleSection";
 import Countdown from "./components/Countdown";
@@ -7,8 +8,8 @@ import EventSection from "./components/EventSection";
 import InvitationSection from "./components/InvitationSection";
 import YouTubeSection from "./components/YouTubeSection";
 import Gallery from "./components/Gallery";
-import LiveStreamingSection from "./components/LiveStreamingSection";
 import OurStory from "./components/OurStory";
+import LiveStreamingSection from "./components/LiveStreamingSection";
 import WeddingGift from "./components/WeddingGift";
 import RSVPForm from "./components/RSVPForm";
 import BestWishes from "./components/BestWishes";
@@ -44,10 +45,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="app">
-      <div className="main-layout">
-        <div className="left"></div>
-        <div className="right">
+    <Preloader>
+      <div className="app">
+        <div className="main-layout">
+          <div className="left"></div>
+          <div className="right">
           {/* Hero Section - Always Visible */}
           {isHero && (
             <Hero
@@ -206,14 +208,15 @@ const App: React.FC = () => {
                 {/* RSVP Form */}
                 <RSVPForm guest={getGuestName()} />
 
-                {/* Footer */}
-                <Footer audioSrc="/src/assets/music/midnight.mp3" />
+                 {/* Footer */}
+                 <Footer audioSrc="https://www.youtube.com/watch?v=02rXCHz0zU8&list=RD02rXCHz0zU8&start_radio=1" />
               </motion.div>
             )}
           </AnimatePresence>
         </div>
       </div>
     </div>
+    </Preloader>
   );
 };
 
