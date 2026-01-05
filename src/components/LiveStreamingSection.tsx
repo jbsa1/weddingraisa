@@ -24,9 +24,9 @@ const LiveStreamingSection: React.FC = () => {
             className="streaming-links"
           >
             <div className="streaming-card">
-              <h3>Wedding Ceremony</h3>
+              <h3>AKAD</h3>
               <p className="streaming-description">
-                Watch the holy matrimony ceremony live from Graha Samudra Bumimoro
+                Watch Akad live from Graha Samudra Bumimoro
               </p>
               <a
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -39,9 +39,9 @@ const LiveStreamingSection: React.FC = () => {
               </a>
             </div>
             <div className="streaming-card">
-              <h3>Wedding Reception</h3>
+              <h3>Resepsi</h3>
               <p className="streaming-description">
-                Join the celebration and reception festivities live
+                Join the celebration and reception live
               </p>
               <a
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"

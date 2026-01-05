@@ -5,14 +5,14 @@ export const weddingData: WeddingData = {
     name: "Raisa",
     fullName: "Raisa Mahani Bin Syekh Abubakar",
     parents:
-      "The Daughter of Mr. Abubakar (Arbin) bin Jafar Bin Syekh Abubakar & Mrs. Dina Sukainah binti Muhammad Bin Syekh Abubakar",
+      "The Daughter of<br>Mr. Abubakar (Arbin) bin Jafar Bin Syekh Abubakar<br>&<br>Mrs. Dina Sukainah binti Muhammad Bin Syekh Abubakar",
     photo: "/Raisa1.jpeg",
   },
   bride: {
     name: "Rafi",
     fullName: "Mirza Ahmad Rafi Alwi Bin Syekh Abubakar",
     parents:
-      "The Son of Mr. drg. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar, MPH,.CGRCP. & Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi",
+      "The Son of<br>Mr. drg. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar, MPH,.CGRCP.<br>&<br>Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi",
     photo: "/Rafi1.jpeg",
   },
   holyMatrimony: {

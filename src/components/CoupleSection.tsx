@@ -23,7 +23,10 @@ const CoupleSection: React.FC<CoupleSectionProps> = ({ groom, bride }) => {
             <img src={groom.photo} alt={groom.name} className="couple-photo" />
             <h3 className="couple-name">{groom.name}</h3>
             <p className="couple-full-name">{groom.fullName}</p>
-            <p className="couple-parents">{groom.parents}</p>
+            <p
+              className="couple-parents"
+              dangerouslySetInnerHTML={{ __html: groom.parents }}
+            ></p>
             {groom.social?.instagram && (
               <a
                 href={groom.social.instagram}
@@ -57,7 +60,10 @@ const CoupleSection: React.FC<CoupleSectionProps> = ({ groom, bride }) => {
             <img src={bride.photo} alt={bride.name} className="couple-photo" />
             <h3 className="couple-name">{bride.name}</h3>
             <p className="couple-full-name">{bride.fullName}</p>
-            <p className="couple-parents">{bride.parents}</p>
+            <p
+              className="couple-parents"
+              dangerouslySetInnerHTML={{ __html: bride.parents }}
+            ></p>
             {bride.social?.instagram && (
               <a
                 href={bride.social.instagram}
