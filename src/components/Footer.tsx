@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 
 interface AudioPlayerProps {
   audioSrc: string;
@@ -16,7 +16,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc }) => {
           await audioRef.current.play();
           setIsPlaying(true);
         } catch (error) {
-          console.log('Auto play failed, user interaction required');
+          console.log("Auto play failed, user interaction required");
         }
       }
     };
@@ -34,7 +34,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc }) => {
           await audioRef.current.play();
           setIsPlaying(true);
         } catch (error) {
-          console.log('Play failed');
+          console.log("Play failed");
         }
       }
     }
@@ -47,7 +47,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc }) => {
         Your browser does not support the audio element.
       </audio>
       <button className="audio-control" onClick={togglePlay}>
-        <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
+        <i className={`fas ${isPlaying ? "fa-pause" : "fa-play"}`}></i>
       </button>
     </div>
   );
@@ -62,17 +62,17 @@ const Footer: React.FC<FooterProps> = ({ audioSrc }) => {
     <footer className="footer">
       <div className="footer-content">
         {audioSrc && <AudioPlayer audioSrc={audioSrc} />}
-        
-        <motion.div 
+
+        <motion.div
           className="footer-text"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p>Designed By JaffarSoft</p>
+          <p>Coded By Jafar & MJ</p>
           <div className="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            {/* <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
@@ -80,9 +80,12 @@ const Footer: React.FC<FooterProps> = ({ audioSrc }) => {
             </a>
             <a href="h#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i>
-            </a>
+            </a> */}
           </div>
-          <p>© {new Date().getFullYear()} Wedding Invitation. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Wedding Invitation. All rights
+            reserved.
+          </p>
         </motion.div>
       </div>
     </footer>
