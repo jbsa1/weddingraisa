@@ -2,7 +2,6 @@ export interface CoupleData {
   name: string;
   fullName: string;
   parents: string;
-  parents2: string;
   photo: string;
   social?: {
     instagram?: string;
