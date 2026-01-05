@@ -29,7 +29,7 @@ const LiveStreamingSection: React.FC = () => {
                 Watch Akad live from Graha Samudra Bumimoro
               </p>
               <a
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                href="http://tiny.cc/RaisaRafiAkad"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="streaming-button"
@@ -44,7 +44,7 @@ const LiveStreamingSection: React.FC = () => {
                 Join the celebration and reception live
               </p>
               <a
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                href="http://tiny.cc/RaisaRafiResepsi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="streaming-button"
