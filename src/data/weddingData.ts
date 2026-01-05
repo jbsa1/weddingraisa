@@ -7,9 +7,6 @@ export const weddingData: WeddingData = {
     parents:
       "The Daughter of Mr. Abubakar (Arbin) bin Jafar Bin Syekh Abubakar & Mrs. Dina Sukainah binti Muhammad Bin Syekh Abubakar",
     photo: "/Raisa1.jpeg",
-    social: {
-      instagram: "https://www.instagram.com/raisamahani/",
-    },
   },
   bride: {
     name: "Rafi",
@@ -17,9 +14,6 @@ export const weddingData: WeddingData = {
     parents:
       "The Son of Mr. drg. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar, MPH,.CGRCP. & Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi",
     photo: "/Rafi1.jpeg",
-    social: {
-      instagram: "https://www.instagram.com/rafialwii/",
-    },
   },
   holyMatrimony: {
     title: "Akad",

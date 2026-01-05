@@ -122,11 +122,11 @@ const App: React.FC = () => {
                 <section className="love-section">
                   <div className="love-content">
                     <img
-                      src="/ASSET-FRAME-JK.webp"
+                      src="/ASSET-FRAME-JK2.webp"
                       alt="Frame"
                       className="love-frame"
                     />
-                    <h2 className="manstein-font">Endless Love</h2>
+                    {/* <h2 className="manstein-font">Endless Love</h2> */}
                     <h3 className="manstein-font">
                       بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
                     </h3>
