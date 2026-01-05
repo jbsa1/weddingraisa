@@ -1,5 +1,5 @@
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Gilda+Display&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Gilda+Display&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /* Reset and Base Styles */
 * {
@@ -13,10 +13,10 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #F9F6EF;
+  background-color: #f9f6ef;
   overflow-x: hidden;
 }
 
@@ -53,7 +53,8 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-13.webp') center/cover;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-13.webp")
+    center/cover;
 }
 
 .main-layout {
@@ -67,7 +68,7 @@ a:active {
 
 .left {
   width: 75%;
-  background-color: #EDE6D5;
+  background-color: #ede6d5;
 }
 
 @media (max-width: 768px) {
@@ -100,7 +101,7 @@ a:active {
   width: 20vw;
   margin: 0 auto;
   border-radius: 150px;
-  background-color: #F9F6EF;
+  background-color: #f9f6ef;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -108,7 +109,6 @@ a:active {
   align-items: center;
   border-radius: 3;
   box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
-
 }
 
 @media (max-width: 768px) {
@@ -118,17 +118,17 @@ a:active {
     padding: 6rem 1.5rem;
     border-radius: 150px;
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
-
   }
 }
 
 .hero-initials {
   width: 200px;
   height: 200px;
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-17.webp') center/cover;
-  font-family: 'Gilda Display', serif;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-17.webp")
+    center/cover;
+  font-family: "Gilda Display", serif;
   font-size: 3rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 1rem;
   line-height: 1;
   display: flex;
@@ -139,7 +139,7 @@ a:active {
 }
 
 .hero-title {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1rem;
   font-weight: 300;
   color: #333;
@@ -149,9 +149,9 @@ a:active {
 }
 
 .hero-couple-name {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 2rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 1rem;
   font-weight: 400;
 }
@@ -159,19 +159,19 @@ a:active {
 .hero-divider {
   width: 80px;
   height: 1px;
-  background: linear-gradient(to right, transparent, #AC8711, transparent);
+  background: linear-gradient(to right, transparent, #ac8711, transparent);
   margin: 1.5rem auto;
 }
 
 .hero-greeting {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1rem;
   color: #666;
   margin-bottom: 0.5rem;
 }
 
 .hero-guest-name {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 2rem;
@@ -183,7 +183,7 @@ a:active {
   color: #fff;
   border: none;
   padding: 0.8rem 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   border-radius: 200px;
   cursor: pointer;
@@ -191,7 +191,7 @@ a:active {
 }
 
 .hero-open-btn:hover {
-  background-color: #AC8711;
+  background-color: #ac8711;
   transform: scale(1.05);
 }
 
@@ -220,7 +220,8 @@ a:active {
 }
 
 .intro-over-bg {
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-13.webp') center/cover;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-13.webp")
+    center/cover;
 }
 
 .intro-overlay {
@@ -232,7 +233,7 @@ a:active {
 }
 
 .intro-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -241,13 +242,13 @@ a:active {
 }
 
 .intro-couple-name {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .intro-and {
-  font-family: 'MonthGlade', sans-serif;
+  font-family: "MonthGlade", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem 0;
@@ -262,7 +263,7 @@ a:active {
 /* Love Section */
 .love-section {
   min-height: 100vh;
-  background-color: #F9F6EF;
+  background-color: #f9f6ef;
   position: relative;
   display: flex;
   align-items: center;
@@ -271,7 +272,8 @@ a:active {
 }
 
 .love-content {
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-1.webp') center/cover;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-1.webp")
+    center/cover;
   text-align: center;
   padding: 2rem;
   border-radius: 20px;
@@ -283,7 +285,6 @@ a:active {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .love-frame {
@@ -295,14 +296,23 @@ a:active {
 }
 
 .love-content h2 {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 2.5rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 2rem;
 }
 
+.love-content h3 {
+  font-family: "Manstein", serif;
+  font-size: 1.5rem;
+  color: #ac8711;
+  margin-bottom: 0.5rem;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+
 .love-content blockquote {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1.1rem;
   line-height: 1.8;
   font-style: italic;
@@ -311,7 +321,7 @@ a:active {
 
 /* Divider Section */
 .divider-section {
-  background-color: #F9F6EF;
+  background-color: #f9f6ef;
 }
 
 .divider-image {
@@ -323,7 +333,8 @@ a:active {
 /* Couple Section */
 .couple-section {
   padding: 6rem 2rem;
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-8-Rev.webp') center/cover;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-8-Rev.webp")
+    center/cover;
   position: relative;
 }
 
@@ -348,7 +359,7 @@ a:active {
 }
 
 .couple-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -387,7 +398,7 @@ a:active {
 }
 
 .couple-card h2 {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
@@ -403,25 +414,26 @@ a:active {
   padding: 0.2rem;
   background-color: white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-position: center 10%;
 }
 
 .couple-name {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 4rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 1rem;
   font-weight: 400;
 }
 
 .couple-full-name {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: black;
   margin-bottom: 1rem;
 }
 
 .couple-parents {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1rem;
   color: #666;
   line-height: 1.6;
@@ -430,7 +442,7 @@ a:active {
 
 .social-link {
   display: inline-block;
-  color: #AC8711;
+  color: #ac8711;
   font-size: 1.5rem;
   transition: transform 0.3s ease;
 }
@@ -440,26 +452,27 @@ a:active {
 }
 
 .couple-divider {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 5rem;
-  color: #AC8711;
+  color: #ac8711;
 }
 
 /* Event Section */
 .event-section {
-  background-color: #EDE6D5;
+  background-color: #ede6d5;
   position: relative;
   padding: 6rem 2rem;
 }
 
 .event-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-9-Rev.webp') center/cover;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-9-Rev.webp")
+    center/cover;
   opacity: 0.3;
 }
 
@@ -467,9 +480,9 @@ a:active {
   position: relative;
   z-index: 2;
   max-width: 1200px;
-  margin:1rem;
+  margin: 1rem;
   padding-top: 1rem;
-  padding-bottom: 1rem
+  padding-bottom: 1rem;
 }
 
 .event-header,
@@ -485,11 +498,10 @@ a:active {
   height: auto;
 }
 
-.event-background{
+.event-background {
   background: rgba(255, 255, 255, 1);
   border-radius: 200px;
-    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
-
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
 }
 
 .events-grid {
@@ -498,26 +510,26 @@ a:active {
   background: rgba(255, 255, 255, 1);
   /* gap: 3rem; */
   border-radius: 200px;
-  border: 2px solid #AC8711;
+  border: 2px solid #ac8711;
 }
 
 .event-card {
   text-align: center;
-  padding: 3rem ;
+  padding: 3rem;
   padding-bottom: 4rem;
   border-radius: 8px;
 }
 
 .event-title {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 1.8rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 1rem;
 }
 
 .event-date,
 .event-time {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 1rem;
@@ -526,7 +538,7 @@ a:active {
 .event-divider {
   width: 60px;
   height: 60px;
-  background: #AC8711;
+  background: #ac8711;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -537,7 +549,7 @@ a:active {
 }
 
 .event-location {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   color: #333;
   margin-bottom: 2rem;
@@ -553,12 +565,12 @@ a:active {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #AC8711;
+  background-color: #ac8711;
   color: #fff;
   text-decoration: none;
   padding: 0.6rem 2rem;
   border-radius: 200px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -580,31 +592,29 @@ a:active {
   width: 90%;
   padding: 6rem 2rem;
   position: relative;
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-16-2.webp');
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-16-2.webp");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
-
 .countdown-section::before {
-  content: '';
+  content: "";
   position: absolute;
 
-  bottom: 0; 
+  bottom: 0;
   left: 0;
   right: 0;
   height: 100%;
 
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-16.webp');
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-16.webp");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
 }
-
 
 .countdown {
   position: relative;
@@ -615,9 +625,9 @@ a:active {
 }
 
 .countdown-title {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 1rem;
-  color: #AC8711;
+  color: #ac8711;
 }
 
 .countdown-items {
@@ -631,15 +641,15 @@ a:active {
 }
 
 .countdown-value {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 3rem;
   font-weight: bold;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 0.5rem;
 }
 
 .countdown-label {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   color: #666;
   text-transform: uppercase;
@@ -659,7 +669,7 @@ a:active {
 }
 
 .streaming-title {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 3rem;
   color: #8b7355;
   margin-bottom: 1rem;
@@ -719,7 +729,7 @@ a:active {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
   color: #fff;
   text-decoration: none;
   padding: 12px 24px;
@@ -756,7 +766,8 @@ a:active {
 /* Invitation Section */
 .invitation-section {
   padding: 6rem 2rem;
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-1.webp') center/cover;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-1.webp")
+    center/cover;
   position: relative;
 }
 
@@ -771,9 +782,9 @@ a:active {
 }
 
 .invitation-title {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 2.5rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 2rem;
   font-weight: lighter;
 }
@@ -783,7 +794,7 @@ a:active {
 }
 
 .family-section {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1.1rem;
   line-height: 1.8;
   color: #555;
@@ -795,16 +806,16 @@ a:active {
 }
 
 .also-inviting {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 1.8rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 1rem;
   text-align: center;
   font-weight: lighter;
 }
 
 .also-inviting-list {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
@@ -818,7 +829,7 @@ a:active {
 /* YouTube Section */
 .youtube-section {
   padding: 6rem 2rem;
-  background-color: #EDE6D5;
+  background-color: #ede6d5;
 }
 
 .youtube-content {
@@ -828,9 +839,9 @@ a:active {
 }
 
 .youtube-title {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 2.5rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 3rem;
 }
 
@@ -856,7 +867,7 @@ a:active {
 /* Gallery Section */
 .gallery-section {
   padding: 6rem 2rem;
-  background-color: #F9F6EF;
+  background-color: #f9f6ef;
 }
 
 .gallery-content {
@@ -865,9 +876,9 @@ a:active {
 }
 
 .gallery-title {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 2.5rem;
-  color: #AC8711;
+  color: #ac8711;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -998,7 +1009,7 @@ a:active {
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   backdrop-filter: blur(10px);
 }
@@ -1006,7 +1017,7 @@ a:active {
 /* Our Story Section */
 .our-story-section {
   padding: 6rem 2rem;
-  background-color: #F9F6EF;
+  background-color: #f9f6ef;
 }
 
 .our-story-content {
@@ -1015,9 +1026,9 @@ a:active {
 }
 
 .our-story-title {
-  font-family: 'Manstein', serif;
+  font-family: "Manstein", serif;
   font-size: 2.5rem;
-  color: #AC8711;
+  color: #ac8711;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -1065,16 +1076,16 @@ a:active {
 }
 
 .story-title {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 1.5rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
 .story-text {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1rem;
   line-height: 1.7;
   color: #555;
@@ -1118,7 +1129,8 @@ a:active {
 /* RSVP Section */
 .rsvp-section {
   padding: 6rem 2rem;
-  background: url('https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-6-scaled.webp') center/cover;
+  background: url("https://tibra-invitation.id/wp-content/uploads/2024/10/ASSET-GOLD-WHITE-6-scaled.webp")
+    center/cover;
   position: relative;
 }
 
@@ -1146,14 +1158,14 @@ a:active {
 }
 
 .section-title {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 2.5rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 1rem;
 }
 
 .rsvp-description {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1.1rem;
   color: #555;
   line-height: 1.8;
@@ -1173,7 +1185,7 @@ a:active {
 
 .form-label {
   display: block;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   color: #333;
   margin-bottom: 0.5rem;
@@ -1186,7 +1198,7 @@ a:active {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   background: #fff;
   transition: border-color 0.3s ease;
@@ -1194,16 +1206,16 @@ a:active {
 
 .form-input:focus,
 .form-select:focus {
-  border-color: #AC8711;
+  border-color: #ac8711;
 }
 
 .submit-button {
   width: 100%;
-  background-color: #AC8711;
+  background-color: #ac8711;
   color: #fff;
   border: none;
   padding: 1rem 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   border-radius: 4px;
   cursor: pointer;
@@ -1225,19 +1237,19 @@ a:active {
 
 .rsvp-success i {
   font-size: 4rem;
-  color: #AC8711;
+  color: #ac8711;
   margin-bottom: 1rem;
 }
 
 .rsvp-success h3 {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
   font-size: 2rem;
   color: #333;
   margin-bottom: 1rem;
 }
 
 .rsvp-success p {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1.1rem;
   color: #555;
   line-height: 1.8;
@@ -1256,7 +1268,7 @@ a:active {
 
 /* Footer */
 .footer {
-  background-color: #403A30;
+  background-color: #403a30;
   color: #fff;
   padding: 3rem 2rem 2rem;
   text-align: center;
@@ -1294,7 +1306,7 @@ a:active {
 }
 
 .footer-text p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
@@ -1313,7 +1325,7 @@ a:active {
 }
 
 .social-links a:hover {
-  color: #AC8711;
+  color: #ac8711;
 }
 
 /* Base Mobile Improvements */
@@ -1917,7 +1929,6 @@ body {
   .event-card {
     padding: 1rem;
     padding-bottom: 2rem;
-  
   }
 
   .rsvp-form {
@@ -1977,7 +1988,6 @@ body {
 
 /* Mobile Performance Optimization */
 @media (max-width: 768px) {
-
   /* Reduce animation complexity for mobile */
   .hero-content,
   .couple-card,
@@ -2057,7 +2067,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #AC8711;
+  background: #ac8711;
   border-radius: 4px;
 }
 

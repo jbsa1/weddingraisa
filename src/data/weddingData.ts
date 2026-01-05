@@ -15,7 +15,7 @@ export const weddingData: WeddingData = {
       "The Son of Mr. drg. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar, MPH,.CGRCP. & Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi",
     photo: "/Rafi1.jpeg",
   },
-   holyMatrimony: {
+  holyMatrimony: {
     title: "Akad",
     date: "Saturday, March 28th 2026",
     time: "09:00 WIB",
@@ -24,7 +24,7 @@ export const weddingData: WeddingData = {
       "Kobangdikal, Jl. Moro Krembangan, Morokrembangan, Kec. Krembangan, Surabaya, Jawa Timur 60178",
     mapsLink: "https://maps.app.goo.gl/Xai4TzMoWs8GECf16",
   },
-   reception: {
+  reception: {
     title: "Resepsi",
     date: "Saturday, March 28th 2026",
     time: "19.00 WIB",
@@ -45,15 +45,15 @@ export const weddingData: WeddingData = {
   photos: [
     "/IMG_1564.JPG",
     "/IMG_4013.JPG",
-    "/IMG_4015.JPG",
-    "/IMG_4019.JPG",
+    // "/IMG_4015.JPG",
+    // "/IMG_4019.JPG",
     "/IMG_4022.JPG",
-    "/IMG_4023.JPG",
+    // "/IMG_4023.JPG",
     "/IMG_4024.JPG",
     "/IMG_4117.JPG",
     "/IMG_4136.JPEG",
   ],
-   gifts: {
+  gifts: {
     bankAccounts: [
       {
         bank: "BCA",
@@ -67,7 +67,7 @@ export const weddingData: WeddingData = {
       },
     ],
     digitalWallets: [
-       {
+      {
         wallet: "ShopeePay",
         accountNumber: "08123456789",
         accountName: "Raisa Mahani",

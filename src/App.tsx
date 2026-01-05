@@ -131,12 +131,10 @@ const App: React.FC = () => {
                       className="love-frame"
                     />
                     {/* <h2 className="manstein-font">Endless Love</h2> */}
-                    <h3 className="manstein-font">
-                      بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
-                    </h3>
-                    <h3 className="manstein-font">
+                    <h3 className="manstein-font">بسم الله الرّحمن الرّحيم</h3>
+                    {/* <h3 className="manstein-font">
                       ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
-                    </h3>
+                    </h3> */}
                     <blockquote>
                       “And among His signs is that He created for you spouses
                       from among yourselves so that you may find tranquility in
@@ -177,40 +175,39 @@ const App: React.FC = () => {
                   reception={weddingData.reception}
                 />
 
-                 {/* Countdown */}
-                 <div className="countdown-decoration">
-                   <section className="countdown-section">
-                     <Countdown targetDate={weddingData.weddingDate} />
-                   </section>
-                 </div>
+                {/* Countdown */}
+                <div className="countdown-decoration">
+                  <section className="countdown-section">
+                    <Countdown targetDate={weddingData.weddingDate} />
+                  </section>
+                </div>
 
+                {/* YouTube Video Section */}
+                <YouTubeSection />
 
-                 {/* YouTube Video Section */}
-                 <YouTubeSection />
+                {/* Photo Gallery */}
+                <Gallery photos={weddingData.photos} />
 
-                 {/* Photo Gallery */}
-                 <Gallery photos={weddingData.photos} />
+                {/* Invitation Section */}
+                <InvitationSection />
 
-                  {/* Invitation Section */}
-                  <InvitationSection />
+                {/* Live Streaming Section */}
+                <LiveStreamingSection />
 
-                  {/* Live Streaming Section */}
-                  <LiveStreamingSection />
+                {/* Wedding Gift */}
+                <WeddingGift gifts={weddingData.gifts} />
 
-                  {/* Wedding Gift */}
-                  <WeddingGift gifts={weddingData.gifts} />
+                {/* Our Story */}
+                <OurStory />
 
-                 {/* Our Story */}
-                 <OurStory />
-
-                 {/* Best Wishes */}
-                 <BestWishes />
+                {/* Best Wishes */}
+                <BestWishes />
 
                 {/* RSVP Form */}
                 <RSVPForm guest={getGuestName()} />
 
-                 {/* Footer */}
-                 <Footer audioSrc="/src/assets/music/midnight.mp3" />
+                {/* Footer */}
+                <Footer audioSrc="/src/assets/music/midnight.mp3" />
               </motion.div>
             )}
           </AnimatePresence>
