@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Preloader from "./components/Preloader";
 import Hero from "./components/Hero";
 import CoupleSection from "./components/CoupleSection";
 import Countdown from "./components/Countdown";
@@ -45,8 +44,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <Preloader>
-      <div className="app">
+    <div className="app">
         <div className="main-layout">
           <div className="left"></div>
           <div className="right">
@@ -216,7 +214,6 @@ const App: React.FC = () => {
         </div>
       </div>
     </div>
-    </Preloader>
   );
 };
 
