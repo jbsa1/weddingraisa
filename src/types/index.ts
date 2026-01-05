@@ -15,6 +15,7 @@ export interface EventData {
   location: string;
   address: string;
   mapsLink: string;
+  streamLink: string;
 }
 
 export interface WeddingData {

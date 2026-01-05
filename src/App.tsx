@@ -127,13 +127,18 @@ const App: React.FC = () => {
                       className="love-frame"
                     />
                     <h2 className="manstein-font">Endless Love</h2>
+                    <h3 className="manstein-font">
+                      بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                    </h3>
+                    <h3 className="manstein-font">
+                      ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
+                    </h3>
                     <blockquote>
-                      "What greater thing is there for two human souls, than to
-                      feel that they are joined for life to strengthen each
-                      other in all labor, to rest on each other in all sorrow,
-                      to minister to each other in all pain, to be with each
-                      other to silent unspeakable memories at the moment, of the
-                      last parting."
+                      “And among His signs is that He created for you spouses
+                      from among yourselves so that you may find tranquility in
+                      them; and He placed between you affection and mercy.
+                      Indeed, in that are signs for a people who reflect.”
+                      (Surah Ar-Rum 21)
                     </blockquote>
                   </div>
                 </section>

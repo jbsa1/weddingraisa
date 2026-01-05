@@ -54,18 +54,18 @@ const WeddingGift: React.FC<WeddingGiftProps> = ({ gifts }) => {
           >
             Bank Transfer
           </button>
-          <button
+          {/* <button
             className={`tab-button ${activeTab === "ewallet" ? "active" : ""}`}
             onClick={() => setActiveTab("ewallet")}
           >
-            {/* E-Wallet
+            E-Wallet
           </button>
           <button
             className={`tab-button ${activeTab === 'address' ? 'active' : ''}`}
             onClick={() => setActiveTab('address')}
-          > */}
+          >
             Gift Address
-          </button>
+          </button> */}
         </div>
 
         <div className="gift-content">
