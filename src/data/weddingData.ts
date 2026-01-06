@@ -12,7 +12,7 @@ export const weddingData: WeddingData = {
     name: "Rafi",
     fullName: "Mirza Ahmad Rafi Alwi Bin Syekh Abubakar",
     parents:
-      "The Son of<br>Mr. drg. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar, MPH,.CGRCP.<br>&<br>Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi",
+      "The Son of<br>Mr. drg. Tomi Abubakar Alwi bin Mohammad Bin Syekh Abubakar<br>&<br>Mrs. Mylantha Kamarullah binti Syarief Muhammad Alhabsyi",
     photo: "/Rafi1.jpeg",
   },
   holyMatrimony: {
